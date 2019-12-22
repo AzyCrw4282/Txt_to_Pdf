@@ -55,7 +55,6 @@ public class TextToPdf {
         }
 
         try {
-
             //A relative dir
             ArrayList<String> myList = new ArrayList<>();
             File directory = new File("./");
@@ -63,18 +62,36 @@ public class TextToPdf {
             //A relative dir approach
             File file = new File("../Gear_set_project/src/main/resources/input_file.txt");
 //            File file = new File("C:\\Users\\User1\\OneDrive - Royal Holloway University of London\\Others\\Gear_set_project\\src\\main\\resources\\input_file.txt");
-            Scanner sc = new Scanner(file).useDelimiter("\n ");
-            FileInputStream input_stream = new FileInputStream(file);
+            Scanner sc = new Scanner(file);
+            boolean already_scanned = false;
+            String cmd_or_text = "";
+            //FileInputStream input_stream = new FileInputStream(file);
+            String str_builder = "";
 
             while (sc.hasNextLine()) {
-                //add to a queue
-                String cmd_or_text = sc.nextLine();
+                if (!already_scanned) cmd_or_text = sc.nextLine();
+
                 if (cmd_or_text.charAt(0) == '.') {
                     myList.add(cmd_or_text.substring(1));//extracts the cmd
-                } else {//if its a word to work with
-                    myList.add(cmd_or_text);
-                    perform_operation(myList);
-                    myList.clear();//list is cleared for new set of cmds and text
+                    already_scanned = false;
+
+                }
+                else {//if its a word to work with
+                    while (sc.hasNextLine()) {//if next is not a command append the string
+                        cmd_or_text = sc.nextLine();
+                        if (cmd_or_text.charAt(0) != '.'){
+                            str_builder += " " + cmd_or_text;
+                        }
+                        else{ //if it's a command
+                            myList.add(str_builder);
+                            perform_operation(myList);
+                            myList.clear();//list is cleared for new set of cmds and text
+                            str_builder = "";
+                            already_scanned = true;
+                            break;
+                        }
+                    }
+
                 }
             }
         } catch (Exception e) {
@@ -83,7 +100,6 @@ public class TextToPdf {
         }
         // Closing the document
         document.close();
-
         System.out.println("PDF Created");
     }
 

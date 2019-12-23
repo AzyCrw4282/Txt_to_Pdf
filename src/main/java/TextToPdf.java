@@ -69,7 +69,10 @@ public class TextToPdf {
             String str_builder = "";
 
             while (sc.hasNextLine()) {
-                if (!already_scanned) cmd_or_text = sc.nextLine();
+                if (!already_scanned) {
+                    cmd_or_text = sc.nextLine();
+                    already_scanned = true;
+                }
 
                 if (cmd_or_text.charAt(0) == '.') {
                     myList.add(cmd_or_text.substring(1));//extracts the cmd
@@ -77,18 +80,19 @@ public class TextToPdf {
 
                 }
                 else {//if its a word to work with
-                    while (sc.hasNextLine()) {//if next is not a command append the string
-                        cmd_or_text = sc.nextLine();
-                        if (cmd_or_text.charAt(0) != '.'){
-                            str_builder += " " + cmd_or_text;
-                        }
-                        else{ //if it's a command
+                    while (sc.hasNextLine()) {
+                        if (!already_scanned) cmd_or_text = sc.nextLine();
+                        if (cmd_or_text.charAt(0) == '.'){
                             myList.add(str_builder);
                             perform_operation(myList);
                             myList.clear();//list is cleared for new set of cmds and text
                             str_builder = "";
                             already_scanned = true;
                             break;
+                        }
+                        else{ //if it's a text
+                            str_builder += " " + cmd_or_text;
+                            already_scanned = false;
                         }
                     }
 
@@ -181,7 +185,6 @@ public class TextToPdf {
 
     private static void add_indentation(Paragraph para ,int indent){
         para.setFirstLineIndent(indent+20);//adds indentation fot the specified amount
-
     }
 
     private static void set_to_bold(Paragraph para ){

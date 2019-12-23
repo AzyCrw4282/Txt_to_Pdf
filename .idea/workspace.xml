@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d991e8b7-44c1-448b-ae36-11e93c8f2d59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gear_set_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gear_set_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TextToPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TextToPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/input_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input_file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/input_file_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input_file_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Unit_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Unit_tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TextToPdf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TextToPdf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/input_file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_file_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/input_file_2.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,8 +101,17 @@
       <option name="presentableId" value="Default" />
       <updated>1576858391347</updated>
       <workItem from="1576858392769" duration="18911000" />
-      <workItem from="1577031094946" duration="13643000" />
+      <workItem from="1577031094946" duration="13770000" />
+      <workItem from="1577063389789" duration="1363000" />
     </task>
+    <task id="LOCAL-00001" summary="Not efficinet methods, need to use seither bufferedreader or fileinputer reader to achive the function needed. Will work on it omo">
+      <created>1577044804633</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577044804633</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,10 +122,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Not efficinet methods, need to use seither bufferedreader or fileinputer reader to achive the function needed. Will work on it omo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Not efficinet methods, need to use seither bufferedreader or fileinputer reader to achive the function needed. Will work on it omo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TextToPdf.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

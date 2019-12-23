@@ -2,38 +2,32 @@ import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.Paragraph;
-
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-import com.itextpdf.kernel.pdf.PdfDocument;
-import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Text;
 import org.junit.Before;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Unit_tests {
 
-    @Test
+/**Main test class to test all functionalities.
+ * @Author Azky
+ */
+public class Unit_tests {
+    private static Paragraph para = new Paragraph();
+    private static String input_test = "Test Me!!!!";
+    private static Document document;
+
+    /**
+     * Tests loading and saving a file to a disk using a relative path method.
+     */
+    @Before
     public void txt_to_pdf(){
-        Document document = null;
         try {
-            String dest = "C:\\Users\\User1\\OneDrive - Royal Holloway University of London\\Others/sample.pdf";
-            PdfWriter writer = new PdfWriter(dest);
-            // Creating a PdfDocument
+            File dir = new File("../input_file_test.pdf");
+            PdfWriter writer = new PdfWriter(dir);
             PdfDocument pdfDoc = new PdfDocument(writer);
-            // Adding a new page
             pdfDoc.addNewPage();
-            // Creating a Document
             document = new Document(pdfDoc);
         } catch (Exception e) {
             System.out.println(" :(( Error creating pdf document! Please check the relative dir you set on line 23");
@@ -45,72 +39,65 @@ public class Unit_tests {
             File directory = new File("./");
             System.out.println(directory.getAbsolutePath());
             //A relative dir approach
-            File file = new File("../Gear_set_project/src/main/resources/input_file.txt");
-//            File file = new File("C:\\Users\\User1\\OneDrive - Royal Holloway University of London\\Others\\Gear_set_project\\src\\main\\resources\\input_file.txt");
+            File file = new File("../Gear_set_project/src/main/resources/input_file_test.txt");
             Scanner sc = new Scanner(file);
 
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(" :(( Error loading input file!!!");
         }
-        // Closing the document
-
         Paragraph para = new Paragraph();
         para.setFirstLineIndent(45);
-
         para.add(new Text("Hello world"));
         document.add(para);
-        document.close();
         System.out.println("PDF Created");
     }
-
-    @Test
-    public void test_all(){
-
-    }
-
+    /**
+     * Test to check setting font to an increased size.
+     */
     @Test
     public void set_to_large(){
-
+        para.add(new Text(input_test).setFontSize(16));
+        document.add(para);
+        document.close();
     }
-//    @Test
-//    void Paragraph create_paragraph(){
-//        Paragraph para = new Paragraph();
-//        return (para);
-//    }
+    /**
+     * Test to check indentation
+     */
     @Test
     public void add_indentation(){
+        para.add(new Text(input_test).setFontSize(16));
+        para.setMarginLeft(30);
+        document.add(para);
+        document.close();
 
     }
+    /**
+     * Test to check setting text to bold
+     */
     @Test
     public  void set_to_bold(){
-
-
+        para.add(new Text(input_test).setBold());
+        document.add(para);
+        document.close();
     }
+    /**
+     * Test to check setting text to italic font
+     */
     @Test
     public void set_to_italic(){
-
-
+        para.add(new Text(input_test).setItalic());
+        document.add(para);
+        document.close();
     }
+    /**
+     * Test to check setting font to regular
+     */
     @Test
     public void set_to_regular(){
-
-
-    }
-    @Test
-    public void set_to_nofill(){
-
-        //activates default. called after each formating option
-    }
-    @Test
-    public void set_to_fill(){
-
-
-    }
-    @Test
-    public void require_new_page(){
-
-
+        para.add(new Text(input_test));
+        document.add(para);
+        document.close();
     }
 
 }

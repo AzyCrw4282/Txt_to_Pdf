@@ -1,0 +1,10 @@
+.large
+My PDF Document
+.normal
+.paragraph
+This is my
+.italics
+very first
+.regular
+pdf document, and the output is formatted really well. While this paragraph is not filled,
+the following one has automatic filling set:

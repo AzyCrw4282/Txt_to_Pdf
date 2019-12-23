@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d991e8b7-44c1-448b-ae36-11e93c8f2d59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Gear_set_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TextToPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TextToPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/input_file_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/input_file_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Unit_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Unit_tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/TextToPdf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TextToPdf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/input_file_2.txt" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +40,11 @@
   </component>
   <component name="ProjectId" id="1VFoq9jJF8dluRL2N18RWIumEZC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
@@ -46,22 +53,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Main_project_ones/ConcurrentOnlineSnakeGame" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/FYP-Checkers/FullUnit_1920_AzkyMubarack" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.TextToPdf">
     <configuration name="TextToPdf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -93,10 +88,22 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.TextToPdf" />
-        <item itemvalue="JUnit.Unit_tests.txt_to_pdf" />
         <item itemvalue="JUnit.Unit_tests" />
+        <item itemvalue="JUnit.Unit_tests.txt_to_pdf" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -110,7 +117,11 @@
       <updated>1576858391347</updated>
       <workItem from="1576858392769" duration="18911000" />
       <workItem from="1577031094946" duration="13770000" />
-      <workItem from="1577063389789" duration="7273000" />
+      <workItem from="1577063389789" duration="7662000" />
+      <workItem from="1577124450926" duration="153000" />
+      <workItem from="1577124809736" duration="1334000" />
+      <workItem from="1577126162462" duration="58000" />
+      <workItem from="1577126243093" duration="5222000" />
     </task>
     <task id="LOCAL-00001" summary="Not efficinet methods, need to use seither bufferedreader or fileinputer reader to achive the function needed. Will work on it omo">
       <created>1577044804633</created>
@@ -133,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577065584289</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="done....">
+      <created>1577070926306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577070926306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +173,46 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Not efficinet methods, need to use seither bufferedreader or fileinputer reader to achive the function needed. Will work on it omo" />
     <MESSAGE value="Ok. mostly working now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ok. mostly working now" />
+    <MESSAGE value="done...." />
+    <option name="LAST_COMMIT_MESSAGE" value="done...." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2660" y="296" key="FileChooserDialogImpl" timestamp="1577129909641">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2660" y="296" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577129909641" />
+    <state width="1877" height="118" key="GridCell.Tab.0.bottom" timestamp="1577128519120">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="118" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
+    <state width="1877" height="118" key="GridCell.Tab.0.center" timestamp="1577128519120">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="118" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
+    <state width="1877" height="118" key="GridCell.Tab.0.left" timestamp="1577128519120">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="118" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
+    <state width="1877" height="118" key="GridCell.Tab.0.right" timestamp="1577128519120">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="118" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
+    <state x="2126" y="167" key="SettingsEditor" timestamp="1577126220261">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2126" y="167" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577126220261" />
+    <state x="2576" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1577126246105">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="365" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1577124812699" />
+    <state x="2576" y="365" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577126246105" />
+    <state x="2968" y="0" width="808" height="1052" key="dock-window-1" timestamp="1577128930061">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2968" y="0" width="808" height="1052" key="dock-window-1/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128930061" />
+    <state x="2235" y="273" width="700" height="530" key="recent.locations.popup" timestamp="1577124872233">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2235" y="273" width="700" height="530" key="recent.locations.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577124872233" />
   </component>
 </project>

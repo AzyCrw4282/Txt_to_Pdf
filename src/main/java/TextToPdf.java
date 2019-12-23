@@ -117,6 +117,7 @@ public class TextToPdf {
         Paragraph para = new Paragraph();
         String input_text = (String) list.get(list.size()-1);;
         int indent = 0;
+
         for (int i = 0; i< list.size()-1 ;i++){//iterate though only the cmds
             cmd = (String) list.get(i);
             System.out.println("cmd: "+ cmd + ". Text: " + input_text);
@@ -136,23 +137,21 @@ public class TextToPdf {
                     para.add(new Text(input_text));
                     break;
                 case "fill":
-
+                    //Not needed
                     break;
                 case "nofill":
-
+                    para.add(new Text(input_text).setFont(regular_font));
                     break;
                 case "regular":
                     para.add(new Text(input_text).setFont(regular_font));
                     break;
 
-                case "italic":
+                case "italics":
                     para.add(new Text(input_text).setFont(italic_font));
                     break;
-
                 case "bold":
                     para.add(new Text(input_text).setFont(bold_font));
                     break;
-
                 case "normal":
                     para.add(new Text(input_text).setFont(regular_font));
                 case "indent":
@@ -170,7 +169,6 @@ public class TextToPdf {
 
             }
             if(list.size() -2 == i ){
-                System.out.println("146");
                 document.add(para);//adds it to document
             }
         }
@@ -184,7 +182,8 @@ public class TextToPdf {
     }
 
     private static void add_indentation(Paragraph para ,int indent){
-        para.setFirstLineIndent(indent+20);//adds indentation fot the specified amount
+//        para.setFirstLineIndent(indent+30);//adds indentation fot the specified amount
+        para.setMarginLeft(indent+30);
     }
 
     private static void set_to_bold(Paragraph para ){

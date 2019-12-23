@@ -31,6 +31,9 @@ public class TextToPdf {
 
     private static Document document;
     private static boolean text_available;
+    private static Paragraph para = new Paragraph();
+    private static boolean add_it = false;
+
     /**
      * Main runnable class
      * @param args
@@ -80,7 +83,7 @@ public class TextToPdf {
 
                 }
                 else {//if its a word to work with
-                    while (sc.hasNextLine()) {
+                    do {
                         if (!already_scanned) cmd_or_text = sc.nextLine();
                         if (cmd_or_text.charAt(0) == '.'){
                             myList.add(str_builder);
@@ -93,11 +96,13 @@ public class TextToPdf {
                         else{ //if it's a text
                             str_builder += " " + cmd_or_text;
                             already_scanned = false;
-                        }
-                    }
 
+                        }
+                    }while (sc.hasNextLine());
                 }
             }
+            myList.add(str_builder);
+            perform_operation(myList);
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println(" :(( Error loading input file!!!");
@@ -107,14 +112,16 @@ public class TextToPdf {
         System.out.println("PDF Created");
     }
 
+
     //Methods for formatting.
     private static void perform_operation(ArrayList list) throws IOException {
         PdfFont italic_font = PdfFontFactory.createFont(StandardFonts.TIMES_ITALIC);
         PdfFont bold_font = PdfFontFactory.createFont(StandardFonts.TIMES_BOLD);
         PdfFont regular_font = PdfFontFactory.createFont(StandardFonts.COURIER);
         String cmd;
+
         String[] array_cmds;
-        Paragraph para = new Paragraph();
+//        Paragraph para = new Paragraph();
         String input_text = (String) list.get(list.size()-1);;
         int indent = 0;
 
@@ -129,61 +136,65 @@ public class TextToPdf {
             }
             switch (cmd){
                 case "large":
-                    //use the para and the msg
-                    para.add(new Text(input_text).setFontSize(16));
+                    get_paragraph().add(new Text(input_text).setFontSize(16));
+                    add_it = true;
                     break;
                 case "paragraph":
-                    para = create_paragraph();
-                    para.add(new Text(input_text));
+                    para = create_new_paragraph();
+                    set_paragraph(para);
+                    get_paragraph().add(new Text(input_text));
+
                     break;
                 case "fill":
                     //Not needed
+                    add_it = true;
                     break;
-                case "nofill":
-                    para.add(new Text(input_text).setFont(regular_font));
+                case "nofill":// new paragrapgh,
+                    create_new_paragraph().add(new Text(input_text));
                     break;
                 case "regular":
-                    para.add(new Text(input_text).setFont(regular_font));
+                    get_paragraph().add(new Text(input_text));
+                    add_it = true;
                     break;
-
                 case "italics":
-                    para.add(new Text(input_text).setFont(italic_font));
+                    get_paragraph().add(new Text(input_text).setFont(italic_font));
                     break;
                 case "bold":
-                    para.add(new Text(input_text).setFont(bold_font));
+                    get_paragraph().add(new Text(input_text).setFont(bold_font));
                     break;
                 case "normal":
-                    para.add(new Text(input_text).setFont(regular_font));
-                case "indent":
-                    add_indentation(para,indent);
+                    create_new_paragraph().setFont(regular_font);
                     break;
-                default:
-//                    //maybe do if main p null then use this??
-//                    para = new Paragraph();
-//                    msg = (String) list.get(i);
-////                    para.add(new Text(msg));
-//
-//                    text_available = true;
-////                    set_to_nofill();
-//                    break;
+                case "indent":
+                    add_indentation(get_paragraph(),indent);
+                    break;
 
             }
-            if(list.size() -2 == i ){
+            //only add with a condition of ane pargrapfg
+            if(list.size()-2 == i && add_it){
                 document.add(para);//adds it to document
+                add_it = false;
+
             }
         }
-
     }
 
-    private static Paragraph create_paragraph(){
-        Paragraph para = new Paragraph();
-
+    private static Paragraph get_paragraph(){
         return (para);
+    }
+
+    private static void set_paragraph(Paragraph p){
+        para = p;
+    }
+
+    private static Paragraph create_new_paragraph(){
+        return (para = new Paragraph());
     }
 
     private static void add_indentation(Paragraph para ,int indent){
 //        para.setFirstLineIndent(indent+30);//adds indentation fot the specified amount
-        para.setMarginLeft(indent+30);
+        if (indent > 0) para.setMarginLeft(indent+30);
+        else para.setMarginLeft(indent-5);
     }
 
     private static void set_to_bold(Paragraph para ){

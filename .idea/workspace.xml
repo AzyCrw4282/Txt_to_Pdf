@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d991e8b7-44c1-448b-ae36-11e93c8f2d59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Gear_set_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TextToPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TextToPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Unit_tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Unit_tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TextToPdf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TextToPdf.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +114,7 @@
       <workItem from="1577124450926" duration="153000" />
       <workItem from="1577124809736" duration="1334000" />
       <workItem from="1577126162462" duration="58000" />
-      <workItem from="1577126243093" duration="5222000" />
+      <workItem from="1577126243093" duration="5324000" />
     </task>
     <task id="LOCAL-00001" summary="Not efficinet methods, need to use seither bufferedreader or fileinputer reader to achive the function needed. Will work on it omo">
       <created>1577044804633</created>
@@ -181,22 +174,22 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2660" y="296" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577129909641" />
-    <state width="1877" height="118" key="GridCell.Tab.0.bottom" timestamp="1577128519120">
+    <state width="1877" height="118" key="GridCell.Tab.0.bottom" timestamp="1577131572360">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="118" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
-    <state width="1877" height="118" key="GridCell.Tab.0.center" timestamp="1577128519120">
+    <state width="1877" height="118" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577131572360" />
+    <state width="1877" height="118" key="GridCell.Tab.0.center" timestamp="1577131572360">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="118" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
-    <state width="1877" height="118" key="GridCell.Tab.0.left" timestamp="1577128519120">
+    <state width="1877" height="118" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577131572360" />
+    <state width="1877" height="118" key="GridCell.Tab.0.left" timestamp="1577131572360">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="118" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
-    <state width="1877" height="118" key="GridCell.Tab.0.right" timestamp="1577128519120">
+    <state width="1877" height="118" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577131572360" />
+    <state width="1877" height="118" key="GridCell.Tab.0.right" timestamp="1577131572360">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="118" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577128519120" />
+    <state width="1877" height="118" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577131572360" />
     <state x="2126" y="167" key="SettingsEditor" timestamp="1577126220261">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

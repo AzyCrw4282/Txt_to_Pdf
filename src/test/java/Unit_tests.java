@@ -9,6 +9,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static javafx.beans.binding.Bindings.when;
+import static org.junit.Assert.assertThat;
+
 
 /**Main test class to test all functionalities.
  * @Author Azky
@@ -98,6 +101,14 @@ public class Unit_tests {
         para.add(new Text(input_test));
         document.add(para);
         document.close();
+    }
+
+    //This is based on the mockito testing library for java
+//An example of writing a test for behavioul driven development(BDD)
+    public void testSomething() {
+        when(helloWorld.say()).thenReturn("Something Cool");
+        String result = subject.say();
+        assertThat(result, is("Something Cool"));
     }
 
 }

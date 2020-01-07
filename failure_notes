@@ -8,3 +8,11 @@ and so using this means a small block of code in a method and so wont require a 
 --Test are bit pointless they dont relly say anything about the behaviour of the code and will fail as a result throwing an unhandled exception.
 Tests as such should be done with the use of assertion statements to evaluate the succictness of the behaviour of the code.
 Read on 'arrange act assert' testing pattern for this
+
+    //This is based on the mockito testing library for java
+//An example of writing a test for behavioul driven development(BDD)
+    public void testSomething() {
+        when(helloWorld.say()).thenReturn("Something Cool");
+        String result = subject.say();
+        assertThat(result, is("Something Cool"));
+    }

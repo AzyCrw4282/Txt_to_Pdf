@@ -1,0 +1,10 @@
+unfortunately wasnt good enough, so things to take from this
+
+-- use of more methods, e.g. to get the indent value rather than processing in the main block. Extracting more methods makes the code easier to digest (because it's a smaller block of code to understand),
+and so using this means a small block of code in a method and so wont require a detailed comment and avoids comments becoming out of date with the code.
+
+-- use of varaibles for substring statements would also be good and good namings
+
+--Test are bit pointless they dont relly say anything about the behaviour of the code and will fail as a result throwing an unhandled exception.
+Tests as such should be done with the use of assertion statements to evaluate the succictness of the behaviour of the code.
+Read on 'arrange act assert' testing pattern for this

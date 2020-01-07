@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d991e8b7-44c1-448b-ae36-11e93c8f2d59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/failure_notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -49,7 +51,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/FYP-Checkers/FullUnit_1920_AzkyMubarack" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Application.TextToPdf">
     <configuration name="TextToPdf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -115,6 +117,7 @@
       <workItem from="1577124809736" duration="1334000" />
       <workItem from="1577126162462" duration="58000" />
       <workItem from="1577126243093" duration="5324000" />
+      <workItem from="1578425561963" duration="1426000" />
     </task>
     <task id="LOCAL-00001" summary="Not efficinet methods, need to use seither bufferedreader or fileinputer reader to achive the function needed. Will work on it omo">
       <created>1577044804633</created>
@@ -170,6 +173,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="done...." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2631" y="331" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578426070517">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2631" y="331" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578426070517" />
     <state x="2660" y="296" key="FileChooserDialogImpl" timestamp="1577129909641">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -190,15 +197,19 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1877" height="118" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577131572360" />
-    <state x="2126" y="167" key="SettingsEditor" timestamp="1577126220261">
+    <state x="2126" y="167" key="SettingsEditor" timestamp="1578425734690">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2126" y="167" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577126220261" />
-    <state x="2576" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1577126246105">
+    <state x="2126" y="167" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578425734690" />
+    <state x="2576" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1578425563854">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="656" y="365" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1577124812699" />
-    <state x="2576" y="365" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1577126246105" />
+    <state x="2576" y="365" key="com.intellij.ide.util.TipDialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578425563854" />
+    <state x="2687" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578426886715">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2687" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1578426886715" />
     <state x="2968" y="0" width="808" height="1052" key="dock-window-1" timestamp="1577128930061">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>

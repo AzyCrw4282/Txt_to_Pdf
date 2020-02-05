@@ -32,7 +32,7 @@ Requirements
 - Use of a better data structure, e.g. queue, linked_list to split the cmds and text using a regex/delimiter and then process it all together.
 - A better library than iText 7 as I couldn't find good explanations for some of the questions that arose during development.
 
-### Code improvements. Use this is mainly as a learning point of iText 8 library.
+### Code improvements. Use this mainly as a learning point of iText 7 library.
 
 -- use of more methods, e.g. to get the indent value rather than processing in the main block. Extracting more methods makes the code easier to digest (because it's a smaller block of code to understand),
 and so using this means a small block of code in a method and so wont require a detailed comment and avoids comments becoming out of date with the code.
@@ -51,3 +51,5 @@ Read on 'arrange act assert' testing pattern for this
         assertThat(result, is("Something Cool"));
     }
 
+
+Changes are welcome.
